@@ -193,7 +193,10 @@ export class AppComponent {
   private nextSound(){
     var audioPlayer = <HTMLVideoElement>document.getElementById("audioPlayer");
 
-    this.currentSoundNumber = Math.floor(Math.random() * (NUMBER_OF_SOUND + 1));
+    var oldSoundNumber = this.currentSoundNumber;
+
+    while(oldSoundNumber == this.currentSoundNumber)
+      this.currentSoundNumber = Math.floor(Math.random() * (NUMBER_OF_SOUND + 1));
     
     if(audioPlayer)
       audioPlayer.play();

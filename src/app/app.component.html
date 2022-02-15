@@ -2,7 +2,7 @@
   <mat-card>
     <div *ngIf="!hasStarted">
       <img class="logo" src="assets/img/logo.png" alt="Man screaming">
-      <h1>Can you guess if the dude is at the gym or having a sexual intercourse ? <br/>(Warning NSFW sounds)</h1>
+      <h1>Can you guess if the dude is at the gym or having a sexual intercourse ? 🤔<br/>(Warning NSFW sounds)</h1>
       <br/><br/>
       <button class="center-button big-button" mat-raised-button color="accent" (click)="startGame()">Play</button>
     </div>
@@ -13,14 +13,14 @@
       <h2>Your score is : {{ score }}</h2>
       <br/><br/>
       <div class="buttons-container">
-          <button class="big-button" mat-raised-button color="warn" (click)="pickedGym()">Gym</button>
+          <button class="big-button" mat-raised-button color="warn" (click)="pickedGym()">Gym 💪</button>
           &nbsp;
-          <button class="big-button" mat-raised-button color="primary" (click)="pickedSex()">Sex</button>
+          <button class="big-button" mat-raised-button color="primary" (click)="pickedSex()">Sex 🔞</button>
       </div>
     </div>
     <div *ngIf="hasLost">
       <h1>Your final score is : {{ score }}</h1>
-      <p><a href="https://twitter.com/share?text=I've correctly identified {{ score }} man shout(s), can you do better ?&hashtags=GymOrSex&url=https://alexandrress.github.io/gym-or-sex/" mat-raised-button color="accent">Share on Twitter !</a></p>
+      <p><a href="https://twitter.com/share?text=I've correctly identified {{ score }} man shout(s), can you do better ?&hashtags=GymOrSex&url=https://alexandrress.github.io/gym-or-sex/" mat-raised-button color="accent">Share on Twitter ! 🐦</a></p>
       <br/><br/>
       <div class="buttons-container">
         <button class="big-button" mat-raised-button color="accent" (click)="replay()">Replay</button>
